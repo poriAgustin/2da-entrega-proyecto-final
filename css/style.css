@@ -11,6 +11,15 @@ main {
     background-image: linear-gradient(#a9a9a97e, #8d8c8c7e)
 }
 
+.navbar .container-fluid {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
 /* LOGO GENERAL */
 .tamaño-logo:hover {
     transform: rotate(5deg);
@@ -23,16 +32,18 @@ main {
 /* Bootstrap */
 .nav-link {
     font-family: monospace;
+    padding: 0;
+    margin: auto 40px;
 }
 
 .nav-link:hover {
     font-weight: bold;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 /* BT cartel index */
 .card-cartel {
-    background-color: rgb(58, 58, 73);
+    background-color: rgb(122, 122, 126);
     color: rgb(226, 226, 226);
     font-size: 20px;
     font-weight: 600;
@@ -47,12 +58,28 @@ main {
 }
 
 .card-footer {
-    background-color: rgb(58, 58, 73);
+    background-color: rgb(122, 122, 126);
     font-size: medium;
+    height: 40px;
 }
 
+.footer-cartel {
+    font-size: 14px;
+    color: rgb(202, 200, 200);
+}
+
+.cartel3 {
+    width: 50vw;
+
+}
 
 /* index */
+
+.container-cartel-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .titulo-index {
     margin-top: 40px;
@@ -121,6 +148,22 @@ main {
     color: slategrey;
     font-size: 18px;
     margin-top: 150px;
+    animation-name: animacionproducto;
+    animation-duration: 2s;
+    position: relative;
+    animation-delay: 2.5s;
+}
+
+@keyframes animacionproducto {
+    0% {
+        color: grey;
+        left: 0;
+    }
+
+    80% {
+        color: grey;
+        left: 180px;
+    }
 }
 
 /* BT CARDS */
@@ -133,7 +176,7 @@ main {
 
 .container-card1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 50px;
 }
 
@@ -166,6 +209,13 @@ main {
     padding-top: 150px;
     margin: 0px 100px;
     padding-bottom: 21px;
+}
+
+.tituloFaq {
+    font-family: monospace;
+    margin: 20px 0px 0px 115px;
+    font-size: 20px;
+    color: #696969;
 }
 
 /* SECCION CONTACTO */
@@ -219,6 +269,16 @@ input:focus {
     padding: 10px;
 }
 
+.wpp {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 840px;
+    left: 96%;
+    z-index: 2;
+}
+
 /* MEDIA QUERYS */
 @media (max-width: 710px) {
     .container-card1 {
@@ -229,5 +289,47 @@ input:focus {
 
     #carouselExampleIndicators {
         padding-top: 105px;
+    }
+
+    .card-img-top:hover {
+        transform: scale(1) translate(0px, 0px);
+    }
+
+    .nav-link {
+        margin: 0px 0px;
+    }
+
+    .navbar .container-fluid {
+        align-items: center;
+    }
+
+    .wpp {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        top: 840px;
+        left: 70%;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 990px) {
+    .nav-link {
+        margin: 8px 0px 0px 0px;
+    }
+
+    .navbar .container-fluid {
+        align-items: center;
+    }
+
+    .wpp {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        position: fixed;
+        top: 840px;
+        left: 90%;
+        z-index: 2;
     }
 }
