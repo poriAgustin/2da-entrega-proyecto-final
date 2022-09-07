@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace
+}
+
+@import './variables/colores';
+@import './variables/extend';
+
+@import './secciones/header';
+@import './secciones/index';
+@import './secciones/footer';
+@import './secciones/alfombras';
+@import './secciones/faq';
+@import './secciones/nosotros';
+@import'./secciones/contacto'

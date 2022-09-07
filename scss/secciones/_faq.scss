@@ -1,0 +1,13 @@
+.main__faq{
+    height: 90vh;
+    .accordion{
+        padding-top: 50px;
+        margin: 100px 100px;
+        padding-bottom: 40px;
+    }
+    .tituloFaq{
+        text-align: center;
+        margin-top: 30px;
+        color: $colorHeaderFooter;
+    }
+}

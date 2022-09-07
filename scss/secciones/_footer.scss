@@ -1,0 +1,29 @@
+footer{
+    background-color: $colorHeaderFooter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .tamaño-logo{
+        width: 90px;
+        margin: 10px;
+        &:hover{
+            transform: rotate(5deg);
+        }
+    }
+    .footer__ul{
+        display: flex;
+        width: 300px;
+        padding-left: 0;
+        justify-content: space-evenly;
+        list-style: none;
+        margin: 0px 0px 5px;
+    }
+    .footer__a{
+        color: $colorLetrasNav;
+        text-decoration: none;
+        &:hover{
+            font-weight: bold;
+        }
+    }
+}

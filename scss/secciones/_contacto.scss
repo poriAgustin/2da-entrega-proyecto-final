@@ -1,0 +1,19 @@
+main{
+    .formulario {
+        padding-top: 150px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-family: monospace;
+    }
+    input:hover {
+        background-color: rgba(194, 193, 193, 0.568);
+        transition: 0.3s;
+        color: white;
+    }
+    
+    input:focus {
+        background-color: rgba(194, 193, 193, 0.568);
+        transition: 0.3s;
+        color: white;
+    }
+}

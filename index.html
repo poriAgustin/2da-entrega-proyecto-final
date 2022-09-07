@@ -10,15 +10,15 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/logoCultureRugs.png">
-    <title>Culture Rugs</title>
+    <title>Culture Rugs | Inicio</title>
 </head>
 
 
 <body>
+    <!-- Header -->
     <header>
-        <!-- Nav -->
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
+            <div class="container-fluid colorFondo">
                 <a class="navbar-brand" href="./index.html"><img class="tamaño-logo" src="./img/logoCultureRugs.png"
                         alt="logoCultureRugs"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -28,19 +28,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link active header__navlink" aria-current="page" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/producto.html">Producto</a>
+                            <a class="nav-link header__navlink" href="./pages/producto.html">Alfombras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/faq.html">FaQ</a>
+                            <a class="nav-link header__navlink" href="./pages/faq.html">FaQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link header__navlink" href="./pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            <a class="nav-link header__navlink" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +51,7 @@
     <main>
         <!-- Carrusel -->
         <div id="carouselExampleIndicators" class="carousel slide carrusel" data-bs-ride="true">
-            <div class="carousel-indicators">
+            <div class="carousel-indicators main__carrusel">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -70,12 +70,12 @@
                     <img src="https://dummyimage.com/1500x670/000/fff.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-prev botonBanner" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-next botonBanner" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -83,61 +83,46 @@
         </div>
 
         <!-- Titutlo -->
-        <div class="container-cartel-titulo">
-            <h6 class="titulo-index">Bienvenidos a Culture Rugs</6>
-                <h6 class="texto-index">El tufting es la realización de alfombras con un método especial en el cual se
+        <div class="main__containertitulo">
+            <h1 class="main__titulo">Bienvenidos a Culture Rugs</1>
+                <h2 class="main__texto">El <em>tufting</em> es la realización de alfombras con un método especial en el cual se
                     utiliza un instrumento denominado pistola, que permite hacer pasar los hilos por una tela especial,
                     montada sobre un marcho y evitando el hacer nudos. Así, la técnica es algo menos laboriosa, más
                     rápida y, en cierto modo, más asequible para el aficionado. Como otras técnicas de creación de
-                    alfombras es preciso realizar o disponer de un diseño previo.</h6>
-
-                <!-- Cartel -->
-                <div class="card text-center cartel3">
-                    <div class="card-header card-cartel">
-                        Nuestro Producto
-                    </div>
-                    <div class="card-body cartel-body">
-                        <h5 class="card-title">ALFOMBRAS</h5>
-                        <p class="card-text cartel-text">Las mejores alfombras que vas a encontrar en el mercado,
-                            texteadas por
-                            lo mejores.
-                        <p class="seg-parrafo">Te animas a ver los terribles diseños que tenemos preparados para vos?
-                        </p>
-                        </p>
-                        <a href="./pages/producto.html" class="btn btn-primary boton-cartel">Ir</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        <p class="footer-cartel">Desde siempre Culture Rugs
-                        </p>
-                    </div>
-                </div>
+                    alfombras es preciso realizar o disponer de un diseño previo.</h2>
         </div>
+
+        <section class="main__container2">
+            <h3 class="ti">Nuestro Producto</h3>
+            <h4 class="main__titulo2">Alfombras</h4>
+            <p class="main__txt2">Las mejores <em>alfombras</em> que vas a encontrar en el mercado, texteadas por lo mejores. <br>  <br> <strong>Te animas a ver
+            los terribles diseños que tenemos preparados para vos?</strong></p>
+            <a href="./pages/producto.html" class="btn btn-primary boton-cartel">Ir</a>
+            <h6 class="main__subtitulo">Desde siempre Culture Rugs</h6>
+        </section>
 
 
         <br>
     </main>
 
     <!-- Footer -->
-    <footer class="footer bg-light">
+    <footer class="footer">
         <a href="./index.html">
             <img class="tamaño-logo" src="./img/logoCultureRugs.png" alt="Logo Footer">
         </a>
-        <ul class="container-list">
+        <ul class="footer__ul">
             <li>
-                <a target="_blank" class="footer-link" href="https://www.instagram.com/_culturerugs/">Instagram</a>
+                <a target="_blank" class="footer__a" href="https://www.instagram.com/_culturerugs/">Instagram</a>
             </li>
             <li>
-                <a class="footer-link" href="#">Twitter</a>
-            </li>
-            <li>
-                <a class="footer-link" href="#">Pinterest</a>
+                <a class="footer__a" href="#">Whatsapp</a>
             </li>
         </ul>
     </footer>
 
-    <div class="wpp">
+    <!-- <div class="wpp">
         <img class="wpp" src="./img/wapp.png" alt="Icono Wpp">
-    </div>
+    </div> -->
 
     <!-- Linkeo CSS bootstrap con CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
