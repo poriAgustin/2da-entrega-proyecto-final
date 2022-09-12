@@ -1,13 +1,16 @@
 .main__faq{
-    height: 90vh;
+    height: auto;
     .accordion{
-        padding-top: 50px;
-        margin: 100px 100px;
-        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 80px 0px;   
+        padding-bottom: 60px;
     }
     .tituloFaq{
         text-align: center;
-        margin-top: 30px;
         color: $colorHeaderFooter;
+    }
+    .accordion-button{
+        padding: 20px;
     }
 }

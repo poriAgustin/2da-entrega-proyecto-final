@@ -1,13 +1,21 @@
 main{
     .container-titulo{
-    
-    }
-    .container-card1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding-top: 90px;
+        margin-bottom: 40px;
         text-align: center;
-        margin-top: 150px;
+        color: $colorLetras;
+        font-family: monospace;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        "card"
+        "card";
+        grid-template-rows: 1fr, 1fr;
+        // align-items: center;
+        text-align: center;
+        margin-top: 0px;
+        justify-items: center
     }
     .card{
         @extend %cardsAlfombras;
@@ -28,5 +36,15 @@ main{
     .card-title{
         font-size: 17px;
         font-weight: 600;
+    }
+    .breadcrumb{
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    .breadcrumb2 a{
+        color: black;
+    }
+    ol.breadcrumb{
+        padding: 0px;
     }
 }

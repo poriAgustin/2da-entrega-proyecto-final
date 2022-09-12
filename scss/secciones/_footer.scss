@@ -20,10 +20,24 @@ footer{
         margin: 0px 0px 5px;
     }
     .footer__a{
-        color: $colorLetrasNav;
-        text-decoration: none;
-        &:hover{
-            font-weight: bold;
+        color: rgb(31, 31, 59);
+        .icon{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+        p{
+            margin-bottom: 0;
+            font-family: sans-serif;
         }
     }
+    .footer__p{
+        margin-bottom: 5px;
+        font-family: sans-serif;
+        color: $colorLetrasNav;
+        font-size: 13px;
+    }
+    .fa-brands:hover{
+            font-size: 40px;
+        }
 }

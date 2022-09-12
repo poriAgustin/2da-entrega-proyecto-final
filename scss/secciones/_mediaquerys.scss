@@ -1,0 +1,99 @@
+@media (min-width: 600px){
+    // Seccion Alfombras
+    main{
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            "card card"
+            "card card"
+            "card card"
+            "card card";
+            grid-template-columns: 1fr, 1fr;
+            grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+        }
+    }
+    .main__faq{
+        .accordion{
+            margin: 20px 150px 0px;
+        }
+    }
+}
+
+@media (min-width: 850px){
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+    .colorFondo{
+        align-items: flex-end;
+    }
+
+    // Seccion Alfombras
+    main{
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            "card card card"
+            "card card card";
+            grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+            grid-template-rows: 1fr, 1fr;
+        }
+        .btn-primary{
+            width: 20vw;
+            font-size: 13px;
+        }
+        .card-img-top:hover {
+            transform: scale(1.5) translate(1px, 1px);
+            transition: 0.3s;
+            z-index: 1;
+        }
+    }
+    .main__faq{
+        .accordion{
+            margin: 20px 190px 0px;
+        }
+    }
+}
+
+@media (min-width: 1080px){
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+    // Seccion Alfombras
+    main{
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            "card card card card"
+            "card card card card";
+            grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+            grid-template-rows: 1fr, 1fr;
+        }
+        .btn-primary{
+            width: 15vw;
+            font-size: 13px;
+        }
+    }
+    .main__faq{
+        .accordion{
+            margin: 20px 250px 0px;
+        }
+    }
+}
+
+@media (min-width: 1430px){
+    // Seccion Alfombras
+    main{
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            "card card card card"
+            "card card card card";
+            grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+            grid-template-rows: 1fr, 1fr;
+        }
+        .btn-primary{
+            width: 10vw;
+            font-size: 13px;
+        }
+    }
+}
