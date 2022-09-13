@@ -38,13 +38,11 @@ main{
         font-weight: 600;
     }
     .breadcrumb{
-        margin-left: 30px;
-        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-bottom: 30px;
     }
     .breadcrumb2 a{
         color: black;
-    }
-    ol.breadcrumb{
-        padding: 0px;
-    }
+        text-decoration: none;
+    }    
 }

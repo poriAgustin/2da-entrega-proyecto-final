@@ -17,7 +17,7 @@ header {
     header .tamaño-logo:hover {
       transform: rotate(5deg); }
   header .colorFondo {
-    background-color: #FBFBFB; }
+    background-color: #fbfbfb; }
   header .header__navlink {
     font-size: 15px;
     margin: 10px; }
@@ -37,7 +37,7 @@ main {
     text-align: center;
     margin: 20px 20px 0px;
     padding: 20px;
-    color: #FBFBFB; }
+    color: #fbfbfb; }
   main .main__titulo {
     margin-bottom: 20px;
     font-size: 22px;
@@ -53,11 +53,11 @@ main {
     align-items: center;
     margin: 10px 30px 0px; }
   main .ti {
-    color: #FBFBFB;
+    color: #fbfbfb;
     font-weight: 700;
     font-size: 20px; }
   main .main__titulo2 {
-    color: #FBFBFB;
+    color: #fbfbfb;
     margin: 10px 15px 15px;
     font-weight: 700; }
   main .main__txt2 {
@@ -79,7 +79,7 @@ main {
     font-size: 15px; }
 
 footer {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,14 +148,12 @@ main .card-title {
   font-weight: 600; }
 
 main .breadcrumb {
-  margin-left: 30px;
-  margin-bottom: 40px; }
+  margin-left: 20px;
+  margin-bottom: 30px; }
 
 main .breadcrumb2 a {
-  color: black; }
-
-main ol.breadcrumb {
-  padding: 0px; }
+  color: black;
+  text-decoration: none; }
 
 .main__faq {
   height: auto; }
@@ -166,7 +164,7 @@ main ol.breadcrumb {
     padding-bottom: 60px; }
   .main__faq .tituloFaq {
     text-align: center;
-    color: #FBFBFB; }
+    color: #fbfbfb; }
   .main__faq .accordion-button {
     padding: 20px; }
 
@@ -211,7 +209,7 @@ main input:focus {
   transition: 0.3s;
   color: white; }
 
-main ol.breadcrumb {
+main ol.breadcrumbContacto {
   padding-top: 120px; }
 
 @media (min-width: 600px) {
