@@ -4,40 +4,47 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    ul{
+        padding: 0px;
+    }
+
     .tamaño-logo{
-        width: 90px;
-        margin: 10px;
+        width: 100px;
+        margin: 15px;
+        align-items: center;
+        justify-content: center;
         &:hover{
             transform: rotate(5deg);
         }
     }
-    .footer__ul{
-        display: flex;
-        width: 300px;
-        padding-left: 0;
-        justify-content: space-evenly;
-        list-style: none;
-        margin: 0px 0px 5px;
-    }
     .footer__a{
-        color: rgb(31, 31, 59);
-        .icon{
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-size: 30px;
-        }
-        p{
-            margin-bottom: 0;
-            font-family: sans-serif;
+        text-decoration: none;
+        color: $colorMain;
+        &:hover{
+            text-decoration: underline;
+            color: rgb(0, 0, 160);
+            font-size: 13px;
         }
     }
-    .footer__p{
-        margin-bottom: 5px;
-        font-family: sans-serif;
-        color: $colorLetrasNav;
-        font-size: 13px;
+    .footer__li{
+        list-style: none;
     }
-    .fa-brands:hover{
-            font-size: 40px;
+    .titulo-footer{
+        font-weight: 600;
+        color: rgb(75, 75, 75);
+    }
+    .fa-brands{
+        font-size: 40px;
+        margin: 15px;
+        &:hover{
+            font-size: 45px;
+            color: rgb(0, 0, 120);
         }
+    }
+    .footer__icon{
+        color: rgb(0, 0, 120);
+    }
+    .container-atencionalcliente{
+        margin: 0px 10px;
+    }
 }

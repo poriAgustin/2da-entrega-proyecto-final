@@ -1,6 +1,5 @@
 main{
     .formulario {
-        padding-top: 20px;
         padding-bottom: 30px;
         text-align: center;
         font-family: monospace;
@@ -17,6 +16,12 @@ main{
         color: white;
     }
     ol.breadcrumbContacto{
-        padding-top: 120px;
+        list-style: none;
+        display: flex;
+        padding: 120px 20px 50px;
+        margin: 0px 0px;
+    }
+    .breadcrumb2{
+        margin: 0px 3px;
     }
 }

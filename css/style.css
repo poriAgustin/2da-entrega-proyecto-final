@@ -26,6 +26,9 @@ header {
 
 main {
   background-color: #586F7C; }
+  main .img-index {
+    width: 250px;
+    border-style: groove; }
   main .carousel-inner {
     padding-top: 92px; }
   main .botonBanner {
@@ -55,10 +58,11 @@ main {
   main .ti {
     color: #fbfbfb;
     font-weight: 700;
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 20px; }
   main .main__titulo2 {
     color: #fbfbfb;
-    margin: 10px 15px 15px;
+    margin: 30px 15px 15px;
     font-weight: 700; }
   main .main__txt2 {
     color: #B8DBD9;
@@ -77,6 +81,21 @@ main {
   main strong {
     color: #2D2E2E;
     font-size: 15px; }
+  main .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px 10px 10px; }
+    main .video .titulo-video {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #2D2E2E; }
+  main .video .titulo-video {
+    margin: 10px 10px 20px; }
+  main .video .video1 {
+    width: 95vw; }
 
 footer {
   background-color: #fbfbfb;
@@ -84,34 +103,37 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center; }
+  footer ul {
+    padding: 0px; }
   footer .tamaño-logo {
-    width: 90px;
-    margin: 10px; }
+    width: 100px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center; }
     footer .tamaño-logo:hover {
       transform: rotate(5deg); }
-  footer .footer__ul {
-    display: flex;
-    width: 300px;
-    padding-left: 0;
-    justify-content: space-evenly;
-    list-style: none;
-    margin: 0px 0px 5px; }
   footer .footer__a {
-    color: #1f1f3b; }
-    footer .footer__a .icon {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      font-size: 30px; }
-    footer .footer__a p {
-      margin-bottom: 0;
-      font-family: sans-serif; }
-  footer .footer__p {
-    margin-bottom: 5px;
-    font-family: sans-serif;
-    color: #2D2E2E;
-    font-size: 13px; }
-  footer .fa-brands:hover {
-    font-size: 40px; }
+    text-decoration: none;
+    color: #586F7C; }
+    footer .footer__a:hover {
+      text-decoration: underline;
+      color: #0000a0;
+      font-size: 13px; }
+  footer .footer__li {
+    list-style: none; }
+  footer .titulo-footer {
+    font-weight: 600;
+    color: #4b4b4b; }
+  footer .fa-brands {
+    font-size: 40px;
+    margin: 15px; }
+    footer .fa-brands:hover {
+      font-size: 45px;
+      color: #000078; }
+  footer .footer__icon {
+    color: #000078; }
+  footer .container-atencionalcliente {
+    margin: 0px 10px; }
 
 main .container-titulo {
   padding-top: 90px;
@@ -170,6 +192,10 @@ main .breadcrumb2 a {
 
 .main__nosotros {
   height: 90vh auto; }
+  .main__nosotros .tituloNosotros {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px; }
   .main__nosotros .container-nosotros {
     padding-top: 50px;
     margin: 0px 20px;
@@ -181,6 +207,9 @@ main .breadcrumb2 a {
     font-size: 17px;
     font-weight: normal;
     margin-bottom: 50px; }
+  .main__nosotros .txtHorarioDeA1 {
+    font-weight: 600;
+    font-size: 20px; }
   .main__nosotros .txtHorarioDeA {
     font-size: 17px;
     font-weight: normal; }
@@ -192,9 +221,11 @@ main .breadcrumb2 a {
     margin-top: 140px; }
   .main__nosotros .breadcrumb {
     padding-top: 120px; }
+  .main__nosotros .mapa {
+    margin-top: 40px;
+    width: 80vw; }
 
 main .formulario {
-  padding-top: 20px;
   padding-bottom: 30px;
   text-align: center;
   font-family: monospace; }
@@ -210,7 +241,13 @@ main input:focus {
   color: white; }
 
 main ol.breadcrumbContacto {
-  padding-top: 120px; }
+  list-style: none;
+  display: flex;
+  padding: 120px 20px 50px;
+  margin: 0px 0px; }
+
+main .breadcrumb2 {
+  margin: 0px 3px; }
 
 @media (min-width: 600px) {
   main .grid-container {
@@ -222,10 +259,76 @@ main ol.breadcrumbContacto {
     margin: 20px 150px 0px; } }
 
 @media (min-width: 850px) {
+  .main__index .main__container2 {
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: 4rem;
+    margin-top: 40px; }
+    .main__index .main__container2 div {
+      margin: 0px 20px; }
+    .main__index .main__container2 .container4 {
+      margin-top: 14rem; }
+    .main__index .main__container2 .main__titulo2 {
+      margin: 0px; }
+    .main__index .main__container2 .main__txt2 {
+      margin: 30px; }
+  .main__index .video {
+    margin-top: 90px; }
+    .main__index .video .video1 {
+      width: 93vw;
+      height: 500px; }
+  .main__nosotros .container-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+  .main__nosotros .contenidoHorarioDeA {
+    margin-top: 60px;
+    text-align: left;
+    width: 300px; }
+  .main__nosotros .subTituloNosotros1 {
+    margin-top: 5px; }
+  footer {
+    text-align: left;
+    align-items: flex-start; }
+    footer .container-atencionalcliente {
+      margin: 0px;
+      margin-right: 80px;
+      padding-left: 40px;
+      margin-bottom: 20px; }
+    footer .titulo-footer {
+      font-size: 20px; }
+  .grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr,1fr;
+    text-align: center; }
+  .grid2 {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 40px; }
+  .grid3 {
+    text-align: left;
+    margin-top: 18px; }
+  .grid4 {
+    text-align: left;
+    padding-top: 16px;
+    margin-left: 0px; }
+  .grid5 {
+    text-align: left;
+    margin-top: 17px; }
+  .grid6 {
+    margin-top: 18px; }
+  .txtfinal {
+    text-align: center; }
   .navbar-collapse {
     justify-content: flex-end; }
   .colorFondo {
     align-items: flex-end; }
+  ul {
+    padding: 0px; }
+  hr {
+    display: none; }
   main .grid-container {
     display: grid;
     grid-template-areas: "card card card" "card card card";
@@ -234,6 +337,9 @@ main ol.breadcrumbContacto {
   main .btn-primary {
     width: 20vw;
     font-size: 13px; }
+    main .btn-primary:hover {
+      transform: scale(1.5) translate(1px, 1px);
+      transition: 0.3s; }
   main .card-img-top:hover {
     transform: scale(1.5) translate(1px, 1px);
     transition: 0.3s;
@@ -242,6 +348,8 @@ main ol.breadcrumbContacto {
     margin: 20px 190px 0px; } }
 
 @media (min-width: 1080px) {
+  .main__index .main__container2 {
+    justify-content: space-around; }
   .navbar-collapse {
     justify-content: flex-end; }
   main .grid-container {
@@ -256,6 +364,10 @@ main ol.breadcrumbContacto {
     margin: 20px 250px 0px; } }
 
 @media (min-width: 1430px) {
+  .main__index .main__containertitulo {
+    margin: 20px 100px 0px; }
+  .main__index .main__container2 {
+    justify-content: space-around; }
   main .grid-container {
     display: grid;
     grid-template-areas: "card card card card" "card card card card";
