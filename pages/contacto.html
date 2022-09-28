@@ -46,52 +46,49 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main__contacto">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumbContacto">
-              <li class="breadcrumb-item breadcrumb2"><a href="../index.html">Inicio</a></li>
-              <li class="breadcrumb-item breadcrumb2" aria-current="page">Contacto</li>
+                <li class="breadcrumb-item breadcrumb2"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item breadcrumb2" aria-current="page">Contacto</li>
             </ol>
-          </nav>
+        </nav>
         <!-- FORMULARIO -->
-        <form action="#" method="post" class="formulario">
-            <input type="text" name="Nombre" placeholder="Nombre y apellido" required>
-            <br><br>
-            <input type="number" name="Edad" placeholder="Edad" required>
-            <br><br>
-            <input type="email" name="Email" placeholder="Email" required>
-            <br><br>
-            <input type="password" name="Contraseña" placeholder="Contraseña" name="pass" required>
-            <br><br>
-            <input type="password" name="ConfirmarContraseña" placeholder="Confirmar contraseña" required>
-            <br><br>
-            <input type="date" name="Fecha de nacimiento">
-            <br><br>
-            <p>¿Queres agregar algo?</p>
-            <textarea name="comentario" cols="20" rows="10"></textarea>
-            <br><br>
-            <span>Hombre</span>
-            <input type="radio" name="sexo" value="Hombre">
-            <span>Mujer</span>
-            <input type="radio" name="sexo" value="Mujer">
-            <span>Otro</span>
-            <input type="radio" name="sexo" value="Otro">
-            <br><br>
-            <select name="talles">
-                <option value="Argentina">Argentina</option>
-                <option value="Chile">Chile</option>
-                <option value="Uruguay">Uruguay</option>
-                <option value="Brasil">Brasil</option>
-                <option value="Paraguay">Paraguay</option>
-            </select>
-            <br><br>
-            <span>Acepta terminos y condiciones</span>
-            <input type="checkbox" name="acepta" value="si">
-            <br><br>
-            <input type="submit" value="Registrarse">
-            <input type="reset" value="Restablecer">
-            <input type="button" value="Hace click">
-        </form>
+        <div class="container-formulario">
+            <h1 class="crea-tucuenta">Crea tu cuenta</h1>
+            <form action="#" method="post" class="formulario">
+                <input type="text" name="Nombre" placeholder="Ingrese su Nombre" required>
+                <br><br>
+                <input type="text" name="Edad" placeholder="Ingrese su Apellido" required>
+                <br><br>
+                <input type="email" name="Email" placeholder="Email" required>
+                <br><br>
+                <input type="password" name="Contraseña" placeholder="Contraseña" name="pass" required>
+                <br><br>
+                <input type="password" name="ConfirmarContraseña" placeholder="Confirmar contraseña" required>
+                <!-- <input type="date" name="Fecha de nacimiento"> -->
+                <br>
+                <select class="nacionalidad" name="Nacionalidad">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Paraguay">Paraguay</option>
+                </select>
+                <div class="acepta-terminos">
+                    <span>Acepta terminos y condiciones</span>
+                    <br>
+                    <input class="checkbox" type="checkbox" name="acepta" value="si">
+                </div>
+                <div class="container-registrarse">
+                    <input class="boton-registro" type="submit" value="Registrar">
+                    <input class="boton-restablecer" type="reset" value="Restablecer">
+                    <a href="#">
+                        <span class="yatenescuenta">Ya tenes cuenta?</span>
+                    </a>
+                </div>
+            </form>
+        </div>
     </main>
 
     <!-- Footer -->

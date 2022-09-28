@@ -1,21 +1,25 @@
-header{
+header {
     position: fixed;
     width: 100vw;
     z-index: 3;
 
-    .tamaño-logo{
+    .tamaño-logo {
         width: 90px;
-        &:hover{
+
+        &:hover {
             transform: rotate(5deg);
         }
     }
-    .colorFondo{
+
+    .colorFondo {
         background-color: $colorHeaderFooter;
     }
-    .header__navlink{
+
+    .header__navlink {
         font-size: 15px;
         margin: 10px;
-        &:hover{
+
+        &:hover {
             font-weight: bold;
         }
     }

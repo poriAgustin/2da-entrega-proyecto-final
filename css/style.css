@@ -26,9 +26,12 @@ header {
 
 main {
   background-color: #586F7C; }
+  main .linea__main {
+    margin: 20px 25px; }
   main .img-index {
     width: 250px;
-    border-style: groove; }
+    border-radius: 20px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.181); }
   main .carousel-inner {
     padding-top: 92px; }
   main .botonBanner {
@@ -39,7 +42,7 @@ main {
     font-family: monospace;
     text-align: center;
     margin: 20px 20px 0px;
-    padding: 20px;
+    padding: 20px 70px;
     color: #fbfbfb; }
   main .main__titulo {
     margin-bottom: 20px;
@@ -86,16 +89,20 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 15px 10px 10px; }
+    margin: 20px 10px 20px; }
     main .video .titulo-video {
       font-weight: 600;
-      font-size: 16px;
-      margin-bottom: 20px;
-      color: #2D2E2E; }
-  main .video .titulo-video {
-    margin: 10px 10px 20px; }
-  main .video .video1 {
-    width: 95vw; }
+      font-size: 22px;
+      padding: 8px 35px 20px;
+      color: #fbfbfb;
+      background-color: #3a4b54;
+      width: 90vw;
+      height: 70px;
+      margin-top: 20px;
+      border-radius: 15px; }
+    main .video .video1 {
+      width: 95vw;
+      margin-top: 40px; }
 
 footer {
   background-color: #fbfbfb;
@@ -135,12 +142,18 @@ footer {
   footer .container-atencionalcliente {
     margin: 0px 10px; }
 
+main .breadcrumb {
+  font-size: 15px; }
+
 main .container-titulo {
   padding-top: 90px;
   margin-bottom: 40px;
   text-align: center;
   color: #B8DBD9;
   font-family: monospace; }
+  main .container-titulo .titulo-producto {
+    color: #fbfbfb;
+    background-color: #4f616b; }
 
 main .grid-container {
   display: grid;
@@ -151,7 +164,8 @@ main .grid-container {
   justify-items: center; }
 
 main .card {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.181); }
 
 main .btn-primary {
   width: 25vw;
@@ -178,19 +192,28 @@ main .breadcrumb2 a {
   text-decoration: none; }
 
 .main__faq {
-  height: auto; }
+  height: 90vh auto; }
+  .main__faq .breadcrumb {
+    padding: 100px 10px 0px;
+    margin: 5px 1rem 0px; }
   .main__faq .accordion {
     display: flex;
     flex-direction: column;
     margin: 30px 80px 0px;
-    padding-bottom: 60px; }
+    padding-bottom: 80px;
+    padding-top: 70px; }
   .main__faq .tituloFaq {
     text-align: center;
-    color: #fbfbfb; }
+    color: #fbfbfb;
+    margin-top: 40px;
+    background-color: #4f616b; }
   .main__faq .accordion-button {
     padding: 20px; }
+  .main__faq .accordion-item .accordion-body {
+    padding-left: 28px; }
 
 .main__nosotros {
+  overflow: hidden;
   height: 90vh auto; }
   .main__nosotros .tituloNosotros {
     font-size: 20px;
@@ -202,16 +225,20 @@ main .breadcrumb2 a {
     text-align: center;
     padding-bottom: 20px; }
   .main__nosotros .subTituloNosotros1 {
-    margin-top: 150px; }
+    margin-top: 150px;
+    font-size: 20px;
+    margin-bottom: 15;
+    font-weight: 600; }
   .main__nosotros .subTituloNosotros {
     font-size: 17px;
     font-weight: normal;
     margin-bottom: 50px; }
   .main__nosotros .txtHorarioDeA1 {
     font-weight: 600;
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 15px; }
   .main__nosotros .txtHorarioDeA {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: normal; }
   .main__nosotros .txt-nosotros {
     margin: 0px 50px;
@@ -221,35 +248,108 @@ main .breadcrumb2 a {
     margin-top: 140px; }
   .main__nosotros .breadcrumb {
     padding-top: 120px; }
-  .main__nosotros .mapa {
-    margin-top: 40px;
-    width: 80vw; }
+  .main__nosotros .container-mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 35px;
+    text-align: center; }
+    .main__nosotros .container-mapa .titulo-mapa {
+      font-weight: 600;
+      font-size: 20px;
+      background-color: #4f616b;
+      width: 99vw;
+      height: 30px;
+      padding-top: 3px;
+      color: #fbfbfb; }
+    .main__nosotros .container-mapa .mapa {
+      margin-top: 40px;
+      width: 80vw; }
 
-main .formulario {
-  padding-bottom: 30px;
-  text-align: center;
-  font-family: monospace; }
-
-main input:hover {
-  background-color: rgba(194, 193, 193, 0.568);
-  transition: 0.3s;
-  color: white; }
-
-main input:focus {
-  background-color: rgba(194, 193, 193, 0.568);
-  transition: 0.3s;
-  color: white; }
-
-main ol.breadcrumbContacto {
-  list-style: none;
-  display: flex;
-  padding: 120px 20px 50px;
-  margin: 0px 0px; }
-
-main .breadcrumb2 {
-  margin: 0px 3px; }
+main {
+  height: 90vh auto;
+  width: 100vw;
+  overflow: hidden; }
+  main .container-formulario {
+    background-color: #292e31a3;
+    width: 85vw;
+    margin-left: 7vw;
+    margin-bottom: 50px;
+    border: 1px black solid;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.172);
+    border-radius: 4px; }
+    main .container-formulario .formulario {
+      padding: 30px 0px 20px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    main .container-formulario .crea-tucuenta {
+      padding: 10px 0px 0px 15px;
+      color: #B8DBD9;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: 100;
+      font-size: 20px; }
+    main .container-formulario input {
+      width: 73vw;
+      height: 50px;
+      border-radius: 4px;
+      border: 2px solid #B8DBD9;
+      background-color: #292e31;
+      padding-left: 7px; }
+      main .container-formulario input:hover {
+        background-color: rgba(194, 193, 193, 0.568);
+        transition: 0.3s;
+        color: white; }
+      main .container-formulario input:focus {
+        background-color: rgba(194, 193, 193, 0.568);
+        transition: 0.3s;
+        color: white; }
+    main .container-formulario .nacionalidad {
+      background-color: #292e31;
+      color: white; }
+    main .container-formulario .acepta-terminos {
+      display: flex;
+      align-items: center; }
+      main .container-formulario .acepta-terminos .checkbox {
+        width: 12px;
+        margin-left: 8px; }
+    main .container-formulario .container-registrarse {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      main .container-formulario .container-registrarse .boton-registro {
+        font-size: 15px;
+        text-align: center;
+        height: 35px;
+        width: 55vw;
+        margin: 5px;
+        padding: 0px;
+        font-weight: 400;
+        font-family: sans-serif;
+        color: #B8DBD9;
+        border: none; }
+      main .container-formulario .container-registrarse .boton-restablecer {
+        height: 30px;
+        width: 25vw;
+        margin: 5px;
+        border: 1px black solid; }
+      main .container-formulario .container-registrarse .yatenescuenta {
+        margin-top: 15px;
+        padding: 0px;
+        color: #fff; }
+  main ol.breadcrumbContacto {
+    list-style: none;
+    display: flex;
+    padding: 120px 0px 0px;
+    margin: 0px 0px;
+    font-size: 15px;
+    margin: 0px 0px 30px 20px; }
+  main .breadcrumb2 {
+    margin: 0px 3px; }
 
 @media (min-width: 600px) {
+  main .card-body {
+    height: 100px; }
   main .grid-container {
     display: grid;
     grid-template-areas: "card card" "card card" "card card" "card card";
@@ -259,11 +359,27 @@ main .breadcrumb2 {
     margin: 20px 150px 0px; } }
 
 @media (min-width: 850px) {
+  .main__contacto .container-formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70vw;
+    margin-left: 15vw; }
+    .main__contacto .container-formulario input {
+      width: 55vw; }
+  .footer .tamaño-logo:hover {
+    transform: scale(1.2) translate(1px, 1px);
+    transition: 0.3s;
+    z-index: 1; }
   .main__index .main__container2 {
     align-items: flex-start;
     flex-direction: row;
     margin-left: 4rem;
     margin-top: 40px; }
+    .main__index .main__container2 .img-index:hover {
+      transform: scale(1.5) translate(1px, 1px);
+      transition: 0.3s;
+      z-index: 1; }
     .main__index .main__container2 div {
       margin: 0px 20px; }
     .main__index .main__container2 .container4 {
@@ -274,20 +390,42 @@ main .breadcrumb2 {
       margin: 30px; }
   .main__index .video {
     margin-top: 90px; }
+    .main__index .video .titulo-video {
+      color: #fbfbfb;
+      height: 40px; }
+      .main__index .video .titulo-video:hover {
+        transform: scale(1) translate(0px, 15px);
+        transition: 0.6s;
+        z-index: 1;
+        padding-bottom: 5px; }
     .main__index .video .video1 {
       width: 93vw;
       height: 500px; }
-  .main__nosotros .container-nosotros {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center; }
-  .main__nosotros .contenidoHorarioDeA {
-    margin-top: 60px;
-    text-align: left;
-    width: 300px; }
-  .main__nosotros .subTituloNosotros1 {
-    margin-top: 5px; }
+  .main__nosotros {
+    overflow: hidden; }
+    .main__nosotros .container-nosotros {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center; }
+    .main__nosotros .contenidoHorarioDeA {
+      margin-top: 60px;
+      text-align: left;
+      width: 300px; }
+    .main__nosotros .subTituloNosotros1 {
+      margin-top: 5px; }
+  .main__faq {
+    overflow: hidden; }
+    .main__faq .tituloFaq:hover {
+      transform: scale(1.2) translate(2px, 2px);
+      transition: 0.6s;
+      z-index: 1; }
+  .main__nosotros {
+    overflow: hidden; }
+    .main__nosotros .titulo-mapa:hover {
+      transform: scale(1.3) translate(0px, 0px);
+      transition: 0.6s;
+      z-index: 1; }
   footer {
     text-align: left;
     align-items: flex-start; }
@@ -301,7 +439,7 @@ main .breadcrumb2 {
   .grid-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr,1fr;
+    grid-template-rows: 1fr, 1fr;
     text-align: center; }
   .grid2 {
     text-align: left;
@@ -329,6 +467,9 @@ main .breadcrumb2 {
     padding: 0px; }
   hr {
     display: none; }
+  main .container-titulo .titulo-producto:hover {
+    transform: scale(1) translate(0px, 15px);
+    transition: 0.3s; }
   main .grid-container {
     display: grid;
     grid-template-areas: "card card card" "card card card";
@@ -338,10 +479,10 @@ main .breadcrumb2 {
     width: 20vw;
     font-size: 13px; }
     main .btn-primary:hover {
-      transform: scale(1.5) translate(1px, 1px);
+      transform: scale(1.3) translate(1px, 1px);
       transition: 0.3s; }
   main .card-img-top:hover {
-    transform: scale(1.5) translate(1px, 1px);
+    transform: scale(1.3) translate(1px, 1px);
     transition: 0.3s;
     z-index: 1; }
   .main__faq .accordion {
@@ -375,4 +516,33 @@ main .breadcrumb2 {
     grid-template-rows: 1fr, 1fr; }
   main .btn-primary {
     width: 10vw;
-    font-size: 13px; } }
+    font-size: 13px; }
+  .main__nosotros .container-mapa {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 50px; }
+  .main__nosotros .container-nosotros {
+    flex-wrap: nowrap;
+    align-items: flex-start; }
+    .main__nosotros .container-nosotros .txtHorarioDeA {
+      text-align: center; }
+    .main__nosotros .container-nosotros .container-1 {
+      width: 400px; }
+    .main__nosotros .container-nosotros .contenidoHorarioDeA {
+      text-align: center;
+      margin-top: 0px;
+      padding: 0px; } }
+
+@media (min-width: 1430px) {
+  .main__contacto .container-formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 55vw;
+    margin-left: 22vw; }
+    .main__contacto .container-formulario input {
+      width: 45vw; }
+    .main__contacto .container-formulario .formulario .boton-registro {
+      width: 45vw; } }

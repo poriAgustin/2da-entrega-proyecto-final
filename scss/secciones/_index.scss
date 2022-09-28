@@ -1,97 +1,115 @@
-main{
-    .img-index{
+main {
+    .linea__main {
+        margin: 20px 25px;
+    }
+
+    .img-index {
         width: 250px;
-        border-style: groove;
-        
+        border-radius: 20px;
+        box-shadow: 3px 3px rgba(0, 0, 0, 0.181);
     }
+
     background-color: $colorMain;
-    .carousel-inner{
-        padding-top: 92px;     
+
+    .carousel-inner {
+        padding-top: 92px;
     }
-    .botonBanner{
+
+    .botonBanner {
         padding-top: 100px;
     }
-    .main__containertitulo{
+
+    .main__containertitulo {
         display: flex;
         flex-direction: column;
         font-family: monospace;
         text-align: center;
         margin: 20px 20px 0px;
-        padding: 20px;
+        padding: 20px 70px;
         color: $colorHeaderFooter;
     }
-    .main__titulo{
-    margin-bottom: 20px;
-    font-size: 22px;
-    font-weight: 600;
+
+    .main__titulo {
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: 600;
     }
-    .main__texto{
+
+    .main__texto {
         margin-top: 10px;
         color: $colorLetras;
         font-size: large;
     }
-    .main__container2{
+
+    .main__container2 {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
         margin: 10px 30px 0px;
     }
-    
-    .ti{
+
+    .ti {
         color: $colorHeaderFooter;
         font-weight: 700;
         font-size: 20px;
         margin-bottom: 20px;
     }
 
-    .main__titulo2{
+    .main__titulo2 {
         color: $colorHeaderFooter;
         margin: 30px 15px 15px;
         font-weight: 700;
     }
-    .main__txt2{
+
+    .main__txt2 {
         color: $colorLetras;
         font-size: large;
     }
-    
-    .btn{
+
+    .btn {
         // margin: 10px 125px 25px;
         background-color: $colorLetrasNav;
         width: 8vw;
         margin-bottom: 25px;
         margin-top: 10px;
     }
-    .main__subtitulo{
+
+    .main__subtitulo {
         background-color: $colorLetrasNav;
         border-radius: 50%;
         color: $colorLetras;
         padding: 10px;
         margin-top: 30px;
     }
-    strong{
+
+    strong {
         color: $colorLetrasNav;
         font-size: 15px;
     }
-    .video{
+
+    .video {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 15px 10px 10px;
-        .titulo-video{
+        margin: 20px 10px 20px;
+
+        .titulo-video {
             font-weight: 600;
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: $colorLetrasNav;
+            font-size: 22px;
+            padding: 8px 35px 20px;
+            color: $colorHeaderFooter;
+            background-color: #3a4b54;
+            width: 90vw;
+            height: 70px;
+            margin-top: 20px;
+            border-radius: 15px;
         }
-    }
-    .video{
-        .titulo-video{
-            margin: 10px 10px 20px;
-        }
-        .video1{
+
+        .video1 {
             width: 95vw;
+            margin-top: 40px;
         }
     }
 }

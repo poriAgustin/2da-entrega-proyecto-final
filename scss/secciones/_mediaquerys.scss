@@ -1,50 +1,107 @@
-@media (min-width: 600px){
+@media (min-width: 600px) {
+
     // Seccion Alfombras
-    main{
-        .grid-container{
+    main {
+        .card-body {
+            height: 100px;
+        }
+
+        .grid-container {
             display: grid;
             grid-template-areas:
-            "card card"
-            "card card"
-            "card card"
-            "card card";
+                "card card"
+                "card card"
+                "card card"
+                "card card";
             grid-template-columns: 1fr, 1fr;
             grid-template-rows: 1fr, 1fr, 1fr, 1fr;
         }
     }
-    .main__faq{
-        .accordion{
+
+    // seccion faq
+    .main__faq {
+        .accordion {
             margin: 20px 150px 0px;
         }
     }
 }
 
-@media (min-width: 850px){
-    // seccion index
-    .main__index{
+@media (min-width: 850px) {
+    .main__contacto {
+        .container-formulario {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 70vw;
+            margin-left: 15vw;
 
-        .main__container2{
+            input {
+                width: 55vw;
+            }
+        }
+    }
+
+    .footer {
+        .tamaño-logo {
+            &:hover {
+                transform: scale(1.2) translate(1px, 1px);
+                transition: 0.3s;
+                z-index: 1;
+            }
+        }
+    }
+
+    // seccion index
+    .main__index {
+
+        .main__container2 {
             align-items: flex-start;
             flex-direction: row;
             margin-left: 4rem;
             margin-top: 40px;
-            div{
+
+            .img-index {
+
+                &:hover {
+                    transform: scale(1.5) translate(1px, 1px);
+                    transition: 0.3s;
+                    z-index: 1;
+                }
+            }
+
+            div {
                 margin: 0px 20px;
             }
-            .container4{
+
+            .container4 {
                 margin-top: 14rem;
             }
-            .main__titulo2{
+
+            .main__titulo2 {
                 margin: 0px;
             }
-            .main__txt2{
+
+            .main__txt2 {
                 margin: 30px;
             }
         }
 
-        .video{
+        .video {
+            .titulo-video {
+                color: $colorHeaderFooter;
+                height: 40px;
+
+                &:hover {
+                    transform: scale(1) translate(0px, 15px);
+                    transition: 0.6s;
+                    z-index: 1;
+                    padding-bottom: 5px;
+                }
+            }
+
             margin-top: 90px;
-            .video1{
+
+            .video1 {
                 width: 93vw;
                 height: 500px;
             }
@@ -52,81 +109,110 @@
     }
 
     // Seccion Nosotros
-    .main__nosotros{
+    .main__nosotros {
+        overflow: hidden;
 
-        .container-nosotros{
+        .container-nosotros {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
         }
 
-        .contenidoHorarioDeA{
+        .contenidoHorarioDeA {
             margin-top: 60px;
             text-align: left;
             width: 300px;
         }
 
-        .subTituloNosotros1{
+        .subTituloNosotros1 {
             margin-top: 5px;
         }
 
 
     }
+
+    // seccion Preguntas Frecuentes
+    .main__faq {
+        overflow: hidden;
+
+        .tituloFaq {
+            &:hover {
+                transform: scale(1.2) translate(2px, 2px);
+                transition: 0.6s;
+                z-index: 1;
+            }
+        }
+    }
+
+    // Seccion Quienes Somos
+    .main__nosotros {
+        overflow: hidden;
+
+        .titulo-mapa {
+            &:hover {
+                transform: scale(1.3) translate(0px, 0px);
+                transition: 0.6s;
+                z-index: 1;
+            }
+        }
+    }
+
     // Footer General
-    footer{
+    footer {
         text-align: left;
         align-items: flex-start;
 
-        .container-atencionalcliente{
+        .container-atencionalcliente {
             margin: 0px;
             margin-right: 80px;
             padding-left: 40px;
             margin-bottom: 20px;
         }
 
-        .titulo-footer{
+        .titulo-footer {
             font-size: 20px;
         }
 
     }
 
-    .grid-footer{
+    .grid-footer {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 1fr,1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr, 1fr;
         text-align: center;
     }
 
-    .grid2{
+    .grid2 {
         text-align: left;
         margin-top: 20px;
         padding-left: 40px;
     }
 
-    .grid3{
+    .grid3 {
         text-align: left;
         margin-top: 18px;
     }
 
-    .grid4{
+    .grid4 {
         text-align: left;
         padding-top: 16px;
         margin-left: 0px;
     }
 
-    .grid5{
+    .grid5 {
         text-align: left;
         margin-top: 17px;
     }
 
-    .grid6{
-         margin-top: 18px;
+    .grid6 {
+        margin-top: 18px;
     }
 
-    .txtfinal{
+    .txtfinal {
         text-align: center;
     }
+
     // .footer{
     //     display: flex;
     //     flex-direction: row;
@@ -138,110 +224,183 @@
 
     //     }
     // }
-    .navbar-collapse{
+    .navbar-collapse {
         justify-content: flex-end;
     }
-    .colorFondo{
+
+    .colorFondo {
         align-items: flex-end;
     }
-    ul{
+
+    ul {
         padding: 0px;
     }
-    hr{
+
+    hr {
         display: none;
     }
 
     // Seccion Alfombras
-    main{
-        .grid-container{
+    main {
+        .container-titulo {
+            .titulo-producto {
+                &:hover {
+                    transform: scale(1) translate(0px, 15px);
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        .grid-container {
             display: grid;
             grid-template-areas:
-            "card card card"
-            "card card card";
+                "card card card"
+                "card card card";
             grid-template-columns: 1fr, 1fr, 1fr, 1fr;
             grid-template-rows: 1fr, 1fr;
         }
-        .btn-primary{
+
+        .btn-primary {
             width: 20vw;
             font-size: 13px;
-            &:hover{
-                transform: scale(1.5) translate(1px, 1px);
+
+            &:hover {
+                transform: scale(1.3) translate(1px, 1px);
                 transition: 0.3s;
             }
         }
+
         .card-img-top:hover {
-            transform: scale(1.5) translate(1px, 1px);
+            transform: scale(1.3) translate(1px, 1px);
             transition: 0.3s;
             z-index: 1;
         }
     }
-    .main__faq{
-        .accordion{
+
+    .main__faq {
+        .accordion {
             margin: 20px 190px 0px;
         }
     }
 }
 
 // seccion nosotros
-.main__nosotros{
+.main__nosotros {}
 
-}
+@media (min-width: 1080px) {
 
-@media (min-width: 1080px){
     // index
-    .main__index{
-        .main__container2{
+    .main__index {
+        .main__container2 {
             justify-content: space-around;
         }
     }
-    .navbar-collapse{
+
+    .navbar-collapse {
         justify-content: flex-end;
     }
+
     // Seccion Alfombras
-    main{
-        .grid-container{
+    main {
+        .grid-container {
             display: grid;
             grid-template-areas:
-            "card card card card"
-            "card card card card";
+                "card card card card"
+                "card card card card";
             grid-template-columns: 1fr, 1fr, 1fr, 1fr;
             grid-template-rows: 1fr, 1fr;
         }
-        .btn-primary{
+
+        .btn-primary {
             width: 15vw;
             font-size: 13px;
         }
     }
-    .main__faq{
-        .accordion{
+
+    .main__faq {
+        .accordion {
             margin: 20px 250px 0px;
         }
     }
 }
 
-@media (min-width: 1430px){
-    .main__index{
-        .main__containertitulo{
+@media (min-width: 1430px) {
+    .main__index {
+        .main__containertitulo {
             margin: 20px 100px 0px;
         }
-        .main__container2{
+
+        .main__container2 {
             justify-content: space-around;
         }
     }
-    
+
     // Seccion Alfombras
-    main{
-        .grid-container{
+    main {
+        .grid-container {
             display: grid;
             grid-template-areas:
-            "card card card card"
-            "card card card card";
+                "card card card card"
+                "card card card card";
             grid-template-columns: 1fr, 1fr, 1fr, 1fr;
             grid-template-rows: 1fr, 1fr;
         }
-        .btn-primary{
+
+        .btn-primary {
             width: 10vw;
             font-size: 13px;
+        }
+    }
+
+    .main__nosotros {
+        .container-mapa {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .container-nosotros {
+            flex-wrap: nowrap;
+            align-items: flex-start;
+
+            .txtHorarioDeA {
+                text-align: center;
+            }
+
+            .container-1 {
+                width: 400px;
+            }
+
+            .contenidoHorarioDeA {
+                text-align: center;
+                margin-top: 0px;
+                padding: 0px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1430px) {
+    .main__contacto {
+        .container-formulario {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 55vw;
+            margin-left: 22vw;
+
+            input {
+                width: 45vw;
+            }
+
+            .formulario {
+                .boton-registro {
+                    width: 45vw;
+                }
+            }
         }
     }
 }

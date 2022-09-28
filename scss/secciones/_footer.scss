@@ -1,50 +1,60 @@
-footer{
+footer {
     background-color: $colorHeaderFooter;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    ul{
+
+    ul {
         padding: 0px;
     }
 
-    .tamaño-logo{
+    .tamaño-logo {
         width: 100px;
         margin: 15px;
         align-items: center;
         justify-content: center;
-        &:hover{
+
+        &:hover {
             transform: rotate(5deg);
         }
     }
-    .footer__a{
+
+    .footer__a {
         text-decoration: none;
         color: $colorMain;
-        &:hover{
+
+        &:hover {
             text-decoration: underline;
             color: rgb(0, 0, 160);
             font-size: 13px;
         }
     }
-    .footer__li{
+
+    .footer__li {
         list-style: none;
     }
-    .titulo-footer{
+
+    .titulo-footer {
         font-weight: 600;
         color: rgb(75, 75, 75);
     }
-    .fa-brands{
+
+    .fa-brands {
         font-size: 40px;
         margin: 15px;
-        &:hover{
+
+        &:hover {
             font-size: 45px;
             color: rgb(0, 0, 120);
         }
     }
-    .footer__icon{
+
+    .footer__icon {
         color: rgb(0, 0, 120);
     }
-    .container-atencionalcliente{
+
+    .container-atencionalcliente {
         margin: 0px 10px;
     }
 }

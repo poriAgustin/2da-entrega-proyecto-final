@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace
+    font-family: monospace;
 }
-
+// VARIABLES
 @import './variables/colores';
 @import './variables/extend';
 
+// SECCIONES
 @import './secciones/header';
 @import './secciones/index';
 @import './secciones/footer';
@@ -15,4 +16,6 @@
 @import './secciones/faq';
 @import './secciones/nosotros';
 @import './secciones/contacto';
+
+// MEDIASQUERYS
 @import './secciones/mediaquerys';

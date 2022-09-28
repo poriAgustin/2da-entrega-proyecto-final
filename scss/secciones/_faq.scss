@@ -1,16 +1,33 @@
-.main__faq{
-    height: auto;
-    .accordion{
+.main__faq {
+    height: 90vh auto;
+
+    .breadcrumb {
+        padding: 100px 10px 0px;
+        margin: 5px 1rem 0px;
+    }
+
+    .accordion {
         display: flex;
         flex-direction: column;
-        margin: 30px 80px 0px;   
-        padding-bottom: 60px;
+        margin: 30px 80px 0px;
+        padding-bottom: 80px;
+        padding-top: 70px;
     }
-    .tituloFaq{
+
+    .tituloFaq {
         text-align: center;
         color: $colorHeaderFooter;
+        margin-top: 40px;
+        background-color: #4f616b;
     }
-    .accordion-button{
+
+    .accordion-button {
         padding: 20px;
+    }
+
+    .accordion-item {
+        .accordion-body {
+            padding-left: 28px;
+        }
     }
 }
