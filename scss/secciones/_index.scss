@@ -1,6 +1,7 @@
 main {
+    background-color: $colorMain;
     .linea__main {
-        margin: 20px 25px;
+        margin: 10px 15px;
     }
 
     .img-index {
@@ -9,7 +10,6 @@ main {
         box-shadow: 3px 3px rgba(0, 0, 0, 0.181);
     }
 
-    background-color: $colorMain;
 
     .carousel-inner {
         padding-top: 92px;
@@ -24,8 +24,8 @@ main {
         flex-direction: column;
         font-family: monospace;
         text-align: center;
-        margin: 20px 20px 0px;
-        padding: 20px 70px;
+        margin: 20px 0px 0px;
+        padding: 20px 30px;
         color: $colorHeaderFooter;
     }
 
@@ -47,6 +47,13 @@ main {
         text-align: center;
         align-items: center;
         margin: 10px 30px 0px;
+        .container4{
+            padding-top: 20px;
+            .txt3{
+                font-size: 1.2rem;
+                padding: 0px 8px;
+            }
+        }
     }
 
     .ti {
@@ -56,23 +63,18 @@ main {
         margin-bottom: 20px;
     }
 
-    .main__titulo2 {
-        color: $colorHeaderFooter;
-        margin: 30px 15px 15px;
-        font-weight: 700;
-    }
-
     .main__txt2 {
         color: $colorLetras;
         font-size: large;
+        padding: 30px 5px 0px;
     }
 
     .btn {
         // margin: 10px 125px 25px;
         background-color: $colorLetrasNav;
         width: 8vw;
-        margin-bottom: 25px;
-        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-top: 15px;
     }
 
     .main__subtitulo {
@@ -97,19 +99,19 @@ main {
 
         .titulo-video {
             font-weight: 600;
-            font-size: 22px;
-            padding: 8px 35px 20px;
+            font-size: 16px;
+            padding: 4px 20px 20px;
             color: $colorHeaderFooter;
             background-color: #3a4b54;
             width: 90vw;
-            height: 70px;
-            margin-top: 20px;
+            height: 28px;
             border-radius: 15px;
         }
 
         .video1 {
             width: 95vw;
-            margin-top: 40px;
+            margin-top: 20px;
+            border-radius: 15px;
         }
     }
 }

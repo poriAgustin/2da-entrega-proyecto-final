@@ -27,7 +27,7 @@ header {
 main {
   background-color: #586F7C; }
   main .linea__main {
-    margin: 20px 25px; }
+    margin: 10px 15px; }
   main .img-index {
     width: 250px;
     border-radius: 20px;
@@ -41,8 +41,8 @@ main {
     flex-direction: column;
     font-family: monospace;
     text-align: center;
-    margin: 20px 20px 0px;
-    padding: 20px 70px;
+    margin: 20px 0px 0px;
+    padding: 20px 30px;
     color: #fbfbfb; }
   main .main__titulo {
     margin-bottom: 20px;
@@ -58,23 +58,25 @@ main {
     text-align: center;
     align-items: center;
     margin: 10px 30px 0px; }
+    main .main__container2 .container4 {
+      padding-top: 20px; }
+      main .main__container2 .container4 .txt3 {
+        font-size: 1.2rem;
+        padding: 0px 8px; }
   main .ti {
     color: #fbfbfb;
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 20px; }
-  main .main__titulo2 {
-    color: #fbfbfb;
-    margin: 30px 15px 15px;
-    font-weight: 700; }
   main .main__txt2 {
     color: #B8DBD9;
-    font-size: large; }
+    font-size: large;
+    padding: 30px 5px 0px; }
   main .btn {
     background-color: #2D2E2E;
     width: 8vw;
-    margin-bottom: 25px;
-    margin-top: 10px; }
+    margin-bottom: 15px;
+    margin-top: 15px; }
   main .main__subtitulo {
     background-color: #2D2E2E;
     border-radius: 50%;
@@ -92,17 +94,17 @@ main {
     margin: 20px 10px 20px; }
     main .video .titulo-video {
       font-weight: 600;
-      font-size: 22px;
-      padding: 8px 35px 20px;
+      font-size: 16px;
+      padding: 4px 20px 20px;
       color: #fbfbfb;
       background-color: #3a4b54;
       width: 90vw;
-      height: 70px;
-      margin-top: 20px;
+      height: 28px;
       border-radius: 15px; }
     main .video .video1 {
       width: 95vw;
-      margin-top: 40px; }
+      margin-top: 20px;
+      border-radius: 15px; }
 
 footer {
   background-color: #fbfbfb;
@@ -142,8 +144,12 @@ footer {
   footer .container-atencionalcliente {
     margin: 0px 10px; }
 
-main .breadcrumb {
-  font-size: 15px; }
+main ol.breadcrumb {
+  font-size: 15px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 main .container-titulo {
   padding-top: 90px;
@@ -168,7 +174,7 @@ main .card {
   box-shadow: 4px 4px rgba(0, 0, 0, 0.181); }
 
 main .btn-primary {
-  width: 25vw;
+  width: 35vw;
   font-size: 13px;
   font-weight: 600; }
 
@@ -191,98 +197,110 @@ main .breadcrumb2 a {
   color: black;
   text-decoration: none; }
 
-.main__faq {
+main {
   height: 90vh auto; }
-  .main__faq .breadcrumb {
-    padding: 100px 10px 0px;
-    margin: 5px 1rem 0px; }
-  .main__faq .accordion {
+  main .breadcrumb-faq {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+    padding: 10px 0px 0px 20px;
+    margin-top: 40px;
+    font-size: 15px; }
+  main .accordion {
     display: flex;
     flex-direction: column;
-    margin: 30px 80px 0px;
-    padding-bottom: 80px;
-    padding-top: 70px; }
-  .main__faq .tituloFaq {
+    margin: 0px 20px 0px;
+    padding: 50px 0px 150px; }
+  main .tituloFaq {
     text-align: center;
     color: #fbfbfb;
-    margin-top: 40px;
+    margin-top: 70px;
     background-color: #4f616b; }
-  .main__faq .accordion-button {
+  main .accordion-button {
     padding: 20px; }
-  .main__faq .accordion-item .accordion-body {
+  main .accordion-item .accordion-body {
     padding-left: 28px; }
 
-.main__nosotros {
-  overflow: hidden;
-  height: 90vh auto; }
-  .main__nosotros .tituloNosotros {
+main {
+  height: 90vh auto;
+  overflow: hidden; }
+  main .tituloNosotros {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px; }
-  .main__nosotros .container-nosotros {
-    padding-top: 50px;
+  main .container-nosotros {
+    padding-top: 40px;
     margin: 0px 20px;
     text-align: center;
     padding-bottom: 20px; }
-  .main__nosotros .subTituloNosotros1 {
-    margin-top: 150px;
+  main .subTituloNosotros1 {
+    margin-top: 100px;
     font-size: 20px;
     margin-bottom: 15;
     font-weight: 600; }
-  .main__nosotros .subTituloNosotros {
-    font-size: 17px;
+  main .subTituloNosotros {
+    font-size: 15px;
     font-weight: normal;
-    margin-bottom: 50px; }
-  .main__nosotros .txtHorarioDeA1 {
+    margin-bottom: 40px; }
+  main .txtHorarioDeA1 {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 15px; }
-  .main__nosotros .txtHorarioDeA {
+  main .txtHorarioDeA {
     font-size: 15px;
     font-weight: normal; }
-  .main__nosotros .txt-nosotros {
-    margin: 0px 50px;
+  main .txt-nosotros {
+    margin: 0px 20px;
     font-size: 15px; }
-  .main__nosotros .contenidoHorarioDeA {
+  main .contenidoHorarioDeA {
     padding: 10px;
-    margin-top: 140px; }
-  .main__nosotros .breadcrumb {
-    padding-top: 120px; }
-  .main__nosotros .container-mapa {
+    margin-top: 100px; }
+  main .breadcrumb-nosotros {
+    list-style: none;
+    display: flex;
+    padding: 40px 20px 0px;
+    margin-top: 80px;
+    font-size: 15px; }
+  main .container-mapa {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 35px;
     text-align: center; }
-    .main__nosotros .container-mapa .titulo-mapa {
+    main .container-mapa .titulo-mapa {
       font-weight: 600;
       font-size: 20px;
       background-color: #4f616b;
-      width: 99vw;
+      width: 100vw;
       height: 30px;
       padding-top: 3px;
       color: #fbfbfb; }
-    .main__nosotros .container-mapa .mapa {
+    main .container-mapa .mapa {
       margin-top: 40px;
       width: 80vw; }
 
 main {
-  height: 90vh auto;
-  width: 100vw;
-  overflow: hidden; }
+  height: 90vh auto; }
   main .container-formulario {
     background-color: #292e31a3;
     width: 85vw;
     margin-left: 7vw;
     margin-bottom: 50px;
     border: 1px black solid;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.172);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.172);
     border-radius: 4px; }
     main .container-formulario .formulario {
       padding: 30px 0px 20px 0px;
       display: flex;
       flex-direction: column;
       align-items: center; }
+      main .container-formulario .formulario .yatenescuenta {
+        margin-top: 15px;
+        padding: 0px;
+        color: #fff;
+        text-decoration: none;
+        list-style: none; }
     main .container-formulario .crea-tucuenta {
       padding: 10px 0px 0px 15px;
       color: #B8DBD9;
@@ -330,13 +348,12 @@ main {
         border: none; }
       main .container-formulario .container-registrarse .boton-restablecer {
         height: 30px;
-        width: 25vw;
+        width: 30vw;
         margin: 5px;
-        border: 1px black solid; }
-      main .container-formulario .container-registrarse .yatenescuenta {
-        margin-top: 15px;
-        padding: 0px;
-        color: #fff; }
+        margin-top: 10px;
+        border: 1px black solid;
+        font-size: 12px;
+        padding: 0px; }
   main ol.breadcrumbContacto {
     list-style: none;
     display: flex;
@@ -348,6 +365,11 @@ main {
     margin: 0px 3px; }
 
 @media (min-width: 600px) {
+  main .video .titulo-video {
+    height: 28px;
+    width: 60vw; }
+  main .grid-container .card-body .btn-primary {
+    width: 150px; }
   main .card-body {
     height: 100px; }
   main .grid-container {
@@ -371,6 +393,8 @@ main {
     transform: scale(1.2) translate(1px, 1px);
     transition: 0.3s;
     z-index: 1; }
+  .main__index .main__containertitulo {
+    padding: 20px 60px; }
   .main__index .main__container2 {
     align-items: flex-start;
     flex-direction: row;
@@ -383,16 +407,21 @@ main {
     .main__index .main__container2 div {
       margin: 0px 20px; }
     .main__index .main__container2 .container4 {
-      margin-top: 14rem; }
+      margin-top: 5px;
+      padding-top: 20px; }
+      .main__index .main__container2 .container4 .btn {
+        margin-top: 0px; }
     .main__index .main__container2 .main__titulo2 {
       margin: 0px; }
     .main__index .main__container2 .main__txt2 {
-      margin: 30px; }
+      margin: 10px 30px 0px; }
   .main__index .video {
     margin-top: 90px; }
     .main__index .video .titulo-video {
       color: #fbfbfb;
-      height: 40px; }
+      height: 40px;
+      width: 270px;
+      padding-top: 9px; }
       .main__index .video .titulo-video:hover {
         transform: scale(1) translate(0px, 15px);
         transition: 0.6s;
@@ -415,6 +444,7 @@ main {
     .main__nosotros .subTituloNosotros1 {
       margin-top: 5px; }
   .main__faq {
+    height: 90vh auto;
     overflow: hidden; }
     .main__faq .tituloFaq:hover {
       transform: scale(1.2) translate(2px, 2px);
@@ -489,10 +519,26 @@ main {
     margin: 20px 190px 0px; } }
 
 @media (min-width: 1080px) {
+  .main__index .main__container2 .container3 {
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.713);
+    border: 2px #B8DBD9 solid;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    margin-top: 33px; }
+    .main__index .main__container2 .container3 .txt3 {
+      color: gray; }
+    .main__index .main__container2 .container3 .main__txt2 {
+      padding-top: 0px; }
+  .main__index .video .titulo-video {
+    width: 50vw; }
   .main__index .main__container2 {
     justify-content: space-around; }
   .navbar-collapse {
     justify-content: flex-end; }
+  main .container-titulo .titulo-producto:hover {
+    transform: scale(1) translate(0px, 15px);
+    transition: 0.3s; }
   main .grid-container {
     display: grid;
     grid-template-areas: "card card card card" "card card card card";
@@ -536,6 +582,8 @@ main {
       padding: 0px; } }
 
 @media (min-width: 1430px) {
+  .main__index .main__container2 {
+    justify-content: space-evenly; }
   .main__contacto .container-formulario {
     display: flex;
     flex-direction: column;

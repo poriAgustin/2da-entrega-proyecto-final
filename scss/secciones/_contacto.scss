@@ -1,7 +1,5 @@
 main {
     height: 90vh auto;
-    width: 100vw;
-    overflow: hidden;
 
     .container-formulario {
         background-color: #292e31a3;
@@ -9,7 +7,7 @@ main {
         margin-left: 7vw;
         margin-bottom: 50px;
         border: 1px rgb(0, 0, 0) solid;
-        box-shadow: 10px 10px rgba(0, 0, 0, 0.172);
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.172);
         border-radius: 4px;
 
         .formulario {
@@ -17,6 +15,13 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
+            .yatenescuenta {
+                margin-top: 15px;
+                padding: 0px;
+                color: #fff;
+                text-decoration: none;
+                list-style: none;
+            }
         }
 
         .crea-tucuenta {
@@ -83,15 +88,12 @@ main {
 
             .boton-restablecer {
                 height: 30px;
-                width: 25vw;
+                width: 30vw;
                 margin: 5px;
+                margin-top: 10px;
                 border: 1px black solid;
-            }
-
-            .yatenescuenta {
-                margin-top: 15px;
+                font-size: 12px;
                 padding: 0px;
-                color: #fff;
             }
         }
     }

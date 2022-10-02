@@ -1,6 +1,11 @@
 main {
-    .breadcrumb {
+
+    ol.breadcrumb {
         font-size: 15px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .container-titulo {
@@ -35,7 +40,7 @@ main {
     }
 
     .btn-primary {
-        width: 25vw;
+        width: 35vw;
         font-size: 13px;
         font-weight: 600;
     }
