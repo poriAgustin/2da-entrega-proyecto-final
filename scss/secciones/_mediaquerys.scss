@@ -12,15 +12,16 @@
 
     // Seccion Alfombras
     main {
-        .grid-container{
-            .card-body{
-                .btn-primary{
+        .grid-container {
+            .card-body {
+                .btn-primary {
                     width: 150px;
                 }
 
             }
 
         }
+
         .card-body {
             height: 100px;
         }
@@ -72,7 +73,7 @@
 
     // seccion index
     .main__index {
-        .main__containertitulo{
+        .main__containertitulo {
             padding: 20px 60px;
         }
 
@@ -321,23 +322,25 @@
 
     // index
     .main__index {
-        .main__container2{
-            .container3{
+        .main__container2 {
+            .container3 {
                 width: 500px;
-                        background-color: rgba(0, 0, 0, 0.713);
-                        border: 2px $colorLetras solid;
-                        border-radius: 10px;
-                        padding-bottom: 10px;
-                        margin-top: 33px;
-                        .txt3{
-                            color: gray;
-                        }
-                        .main__txt2{
-                            padding-top: 0px;
-                        }
-                    }
+                background-color: rgba(0, 0, 0, 0.713);
+                border: 2px $colorLetras solid;
+                border-radius: 10px;
+                padding-bottom: 10px;
+                margin-top: 33px;
+
+                .txt3 {
+                    color: gray;
                 }
-        
+
+                .main__txt2 {
+                    padding-top: 0px;
+                }
+            }
+        }
+
         .video {
             .titulo-video {
                 width: 50vw;
@@ -447,11 +450,12 @@
 }
 
 @media (min-width: 1430px) {
-    .main__index{
-        .main__container2{
+    .main__index {
+        .main__container2 {
             justify-content: space-evenly;
         }
     }
+
     .main__contacto {
         .container-formulario {
             display: flex;
